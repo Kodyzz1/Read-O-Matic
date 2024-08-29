@@ -11,7 +11,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "inquirer": "^10.1.8",
-    "fs": "^0.0.1"
+    "fs": "^0.0.1-security",
+    "inquirer": "^10.1.8"
   }
 }
