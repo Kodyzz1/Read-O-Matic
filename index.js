@@ -78,39 +78,39 @@ function renderLicenseBadge(license) {
 const generateReadme = (answers) => {
   // Generate the content of the README file using the answers object
   const readmeContent = `
-    #${answers.title}
+  ## ${answers.title}
 
-    ##Description
-    ${answers.description}
+  ## Description
+  ${answers.description}
 
-    ##Table of Contents
-    - [Installation](#Installation)
-    - [Usage](#Usage)
-    - [Contribution](#Contribution)
-    - [Tests](#Tests)
-    - [License](#License)
-    - [Questions](#Questions)
+  ## Table of Contents
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [Contribution](#Contribution)
+  - [Tests](#Tests)
+  - [License](#License)
+  - [Questions](#Questions)
 
-    ## Installation
-    ${answers.installation}
+  ## Installation
+  ${answers.installation}
 
-    ## Usage
-    ${answers.usage}
+  ## Usage
+  ${answers.usage}
 
-    ## Contribution
-    ${answers.contribution}
+  ## Contribution
+  ${answers.contribution}
 
-    ## Tests
-    ${answers.test}
+  ## Tests
+  ${answers.test}
 
-    ## License
-    This project is licensed under the ${answers.license} license.
+  ## License
+  This project is licensed under the ${answers.license} license.
 
-    ## Questions
-    For any questions, please contact me:
-    - GitHub: [${answers.github}](https://github.com/${answers.github})
-    - Email: ${answers.email}
-    `;
+  ## Questions
+  For any questions, please contact me:
+  - GitHub: [${answers.github}](https://github.com/${answers.github})
+  - Email: ${answers.email}
+  `;
 
   // Write the content to a README file
   fs.writeFile("README.md", readmeContent, "utf8", (err) => {
